@@ -29,7 +29,7 @@ export default class Holder extends Component {
 		const trains = [];
 		for (let train = 0; train < this.state.platformStatus.length; train++) {
 			trains.push(
-				<Yard
+				<Platform
 					key={train}
 					trainNumber={train}
 					maintainence={this.modifyTrain.bind(this)}
